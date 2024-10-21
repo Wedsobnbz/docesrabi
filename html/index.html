@@ -1,0 +1,365 @@
+htmlecss.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabi Doces</title>
+    <link rel="stylesheet" href="mae.css">
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(120deg, #ff093e, #080504);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            border-radius: 510%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            border-radius: 50%;
+        }
+
+        .quadrado1, .quadrado2, .quadrado,{
+            width: 100%;
+            margin: 20px 0;
+            padding: 20px 0;
+            background-color: hsl(342, 92%, 24%);
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .quadrado4 {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            margin: 10px --10px;
+            padding: 8px;
+            background-color: hsl(342, 92%, 24%);
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .quadrado5 {
+            width: 100%;
+            padding: 20px 0;
+            background-color: hsl(350, 99%, 27%);
+            color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 20px 0;
+            background-color: #580051;
+        }
+        .menu li {
+            margin: 0 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .menu a:hover {
+            color: #7c0034;
+        }
+
+        .container, .imagem-container1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            color: #000;
+            width: 200px;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .preco {
+            font-size: 1.1em;
+            color: #a80041;
+            font-weight: bold;
+        }
+
+        .btn-carrinho {
+            background-color: #a80041;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn-carrinho:hover {
+            background-color: #580051;
+        }
+
+        .container .item:hover, .imagem-container1 .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        fieldset {
+            border: 2px solid #580051;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #660956;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #formularios {
+            width: 100%;
+            max-width: 500px;
+            padding: 50px;
+            margin: 50px auto;
+            border: 1px solid #5c0032;
+            border-radius: 20px;
+            background-color: #5c0032;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #formularios h3 {
+            text-align: center;
+            color: #bd0881;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        #formularios input, #formularios textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .map-container {
+            margin: 30px 0;
+        }
+
+        .map-container iframe {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .circular-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="quadrado4">+ DE 15 ANOS, TORNAMOS SEUS DIAS MAIS DOCE 🧁</div><br>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#formularios">Pedidos</a></li>
+                <li><a href="#contatos">Nossa História</a></li>
+                <li><a href="#valores">Valores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="center">
+        <img src="./img/rabi1.jpg" alt="Rabi Doces" class="circular-image">
+        <img src="image copy.png" alt="Mês das Crianças" class="achado">
+    </div><br>
+
+    <div class="quadrado5"><h2>Nossas linhas irresistíveis</h2></div><br>
+
+    <div class="container">
+        <div class="item" title="Delicioso bolo caseiro feito com ingredientes frescos.">
+            <img src="https://i0.wp.com/centralblogs.com.br/wp-content/uploads/2020/05/como-fazer-brownie.jpg?w=1200&ssl=1" alt="Bolo">
+            <p>Bolo</p>
+            <div class="preco">R$6,99</div>
+            <button class="btn-carrinho">Rabi Carinhos</button>
+        </div>
+        <div class="item" title="Brownie com chocolate intenso, crocante por fora e macio por dentro.">
+            <img src="https://th.bing.com/th/id/OIP.aPo53Cgr33OJij-4dTUGEAHaE8?rs=1&pid=ImgDetMain" alt="Brownie">
+            <p>Brownie</p>
+            <div class="preco">R$6,99</div>
+            <button class="btn-carrinho">Rabi Carinhos</button>
+        </div>
+        <div class="item" title="Mousse leve e cremoso, com sabor de chocolate ou maracujá.">
+            <img src="mousse.jpg" alt="Mousse">
+            <p>Mousse</p>
+            <div class="preco">R$6,99</div>
+            <button class="btn-carrinho">Rabi Carinhos</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="imagem-container1">
+        <div class="item" title="Palha italiana feita com biscoito e leite condensado.">
+            <img src="./img/palha.jpg" alt="Palha">
+            <p>Palha</p>
+            <div class="preco">R$6,99</div>
+            <button class="btn-carrinho">Rabi Carinhos</button>
+        </div>
+        <div class="item" title="Delicioso pavê com camadas de creme e biscoito.">
+            <img src="./img/pavê.jpg" alt="Pavê">
+            <p>Pavê</p>
+            <div class="preco">R$6,99</div>
+            <button class="btn-carrinho">Rabi Carinhos</button>
+        </div>
+        <div class="item" title="Pudim cremoso com calda de caramelo.">
+            <img src="./img/pudim.jpg" alt="Pudim">
+            <p>Pudim</p>
+            <div class="preco">R$6,99</div>
+            <button class="btn-carrinho">Rabi Carinhos</button>
+        </div>
+    </div>
+
+    
+
+    <br><br>
+
+
+    <section id="formularios">
+        <form action="#" method="POST">
+            <h3>Faça o seu pedido:</h3>
+    
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Ex: 21 99999-9999" required>
+    
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="9" required>
+            <button type="button" class="cep-btn" onclick="buscarCEP()">
+                <a class="localizacao" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noreferrer">Não sei meu CEP</a>
+            </button><br><br>
+    
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required>
+    
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+    
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+    
+            <h1>Rabi Carinhos:</h1>
+            <p ></p>
+    
+            <label>Bolo (R$6,99):</label>
+            <input type="number" name="bolo" min="0" value="0">
+    
+            <label>Brownie (R$6,99):</label>
+            <input type="number" name="brownie" min="0" value="0">
+    
+            <label>Mousse (R$6,99):</label>
+            <input type="number" name="mousse" min="0" value="0">
+    
+            <label>Palha Italiana (R$6,99):</label>
+            <input type="number" name="palha" min="0" value="0">
+    
+            <label>Pavê (R$6,99):</label>
+            <input type="number" name="pave" min="0" value="0">
+    
+            <label>Pudim (R$6,99):</label>
+            <input type="number" name="pudim" min="0" value="0">
+    
+            <div class="total">
+                Total: R$<span id="totalValue">0.00</span>
+            </div>
+    <br>
+            <label for="mensagem">Observação:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <div class="button-group">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </form>
+    </section>
+ 
+    <section id="contatos">
+        <div class="quadrado1"><h3>História</h3></div>
+        <fieldset>
+            <p>Em 2005, um casal apaixonado por doces realizou o sonho de abrir sua própria loja: Rabi Doces. "Rabi" que quer dizer mestre. Com receitas caseiras e o desejo de adoçar a vida das pessoas, a pequena loja rapidamente se tornou popular na cidade. Cada doce era feito com carinho, criando um espaço acolhedor para quem buscava sabores que lembravam a infância. Hoje, a Rabi Doces continua a encantar, mantendo viva a essência de amor e dedicação de seus fundadores.</p>
+        </fieldset>
+    </section>
+
+    <section id="valores">
+        <div class="quadrado2"><h4>Valores</h4></div>
+        <fieldset>
+            <ul>
+                <li>Qualidade: Cada doce é feito com os melhores ingredientes e muito cuidado.</li>
+                <li>Tradição: Respeito pelas receitas caseiras que trazem memórias afetivas e sabores da infância.</li>
+                <li>Carinho e Dedicação: O amor pelo que fazemos reflete-se em cada detalhe, desde as receitas até o atendimento.</li>
+            </ul>
+        </fieldset>
+    </section>
+
+    <section id="localizacao">
+        <div class="center">
+            <h4>Visite-nos!</h4>
+            <p>Estamos ansiosos para te ver! Venha nos visitar e experimentar nossas delícias pessoalmente.</p>
+            <br><br>
+            <h5>Rua Bom Jesus, 777, Paracambi</h5>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.409177166465!2d-43.20937178455483!3d-22.917105485258112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9961f9eaa45e7f%3A0x59325b4783f13bb3!2sRabi%20Doces!5e0!3m2!1spt-BR!2sbr!4v1696490224136!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://maps.app.goo.gl/6MC8BFewRP1hk3L58" target="_blank">Veja no Google Maps</a>
+        </div>
+        <fieldset>
+            <div class="quadrado6"></div>
+            <legend>Horário de Funcionamento</legend>
+            <ul>
+                <li>Segunda a Sexta: 9h - 18h</li>
+                <li>Sábado: 10h - 16h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </fieldset>
+        <div class="contato">
+            <ul class="menu">
+            <h5>Telefone para Contato:</h5>
+            <p>(21) 99008-2368</p></ul>
+        </div>
+    </section>
